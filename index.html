@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apple Website</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    <nav id="navbar">
+      <a href="#home" class="brand">Heavenly Apple</a>
+      <div class="search-container">
+        <input type="text" placeholder="Search..." id="search-bar">
+        <img src="https://png.pngtree.com/png-vector/20190505/ourlarge/pngtree-vector-search-icon-png-image_1022637.jpg" alt="Search Icon" id="search-icon" onclick="toggleSearch()">
+      </div>
+      <div class="menu" id="menu">
+        <a href="#categories">Categories</a>
+        <a href="#our-service">Our Services</a>
+        <a href="#contact">Contact</a>
+        <div class="profile">
+          <img src="https://tse2.mm.bing.net/th?id=OIP.AdoJAsiWdwMNG0ZTvUoTUQHaHa&pid=Api&P=0&h=180" alt="Profile Icon" id="profile-icon" onclick="toggleProfileDropdown()">
+          <div class="profile-dropdown">
+            <a href="#" id="login-link">Login</a>
+            <a href="#" id="logout-link" style="display: none;">Logout</a>
+          </div>
+        </div>
+      </div>
+      <button id="menu-toggle" type="button" onclick="toggleMenu()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </nav>
+  </header>
+  <main>
+    <section id="home">
+      <h1>Welcome to Heavenly Apple</h1>
+      <p> Apples are versatile fruits enjoyed fresh as snacks, in cooking, or as juice. They are packed with fiber, vitamins, and antioxidants, promoting overall health. From pies to salads, apples add flavor and texture to a variety of dishes. Their natural sweetness makes them a popular choice for desserts and preserves. Additionally, apples are pressed into cider, a refreshing beverage enjoyed worldwide. With their crisp texture and sweet-tart flavor, apples remain a beloved fruit with numerous culinary uses and health benefits.
+
+      </p>
+      <button>Shop Now</button>
+    </section>
+    <section id="categories" class="sec-padding">
+      <h3 class="section-heading">Categories</h3>
+      <div class="sec-content-div flexible">
+        <div class="tile">
+          <img src="https://i.ibb.co/t2x706V/amber.jpg" alt="photo of amber apples" />
+          <h4>Amber</h4>
+          <p>
+            This red, medium-sized fruit becomes fully ripe in mid-October. It
+            is mostly grown in Shopian and Kulgam.
+          </p>
+        </div>
+        <div class="tile">
+          <img
+            src="https://i.ibb.co/H4Cnh7v/american-trel.png"
+            alt="photo of american trel apples"
+          />
+          <h4>American Trel</h4>
+          <p>
+            A small, rounded, very crispy and sweet fruit variety that ripens
+            in mid-September.
+          </p>
+        </div>
+        <div class="tile">
+          <img src="https://i.ibb.co/jTDgqYB/red-delicious.png" alt="photo of red delicious apple" />
+          <h4>Red Delicious</h4>
+          <p>
+            A very popular and widely cultivated variety of apple that ripens
+            in mid-September. Its flesh is greenish white, grainy and juicy.
+          </p>
+        </div>
+        <div class="tile">
+          <img src="https://i.ibb.co/MSvg1QN/maharaja.png" alt="photo of Maharaej apples" />
+          <h4>Maharaej</h4>
+          <p>
+            A large apple with red and green color. It tastes a bit sour but
+            sweetens with time and is available by late October.
+          </p>
+        </div>
+        <div class="tile">
+          <img src="https://i.ibb.co/zVR1LB2/hazal.png/" alt="photo of Hazratbael apples" />
+          <h4>Hazratbael</h4>
+          <p>
+            A quickly perishable variety that ripens in early July. It is the
+            oldest variety of apples cultivated in the valley and is mostly
+            consumed domestically
+          </p>
+        </div>
+        <div class="tile">
+          <img src="https://i.ibb.co/BNFrnZn/golden.png" alt="photo of Golden Delicious apples" />
+          <h4>Golden Delicious</h4>
+          <p>
+            A variety with comparatively longer shelf life, it is crispy,
+            juicy and has thick greenish-white flesh which turns golden upon
+            ripening. It is available till January.
+          </p>
+        </div>
+      </div>
+    </section>
+  </section>
+  <section id="our-service" class="sec-padding">
+    <h3 class="section-heading">OUR SERVICE</h3>
+    <div class="sec-content-div">
+      <div class="bars">
+        <div class="icon-container">
+          <img src="https://i.ibb.co/w6H542X/Fresh.png" alt="" />
+        </div>
+        <div class="txt-container">
+          <h5>Fresh</h5>
+          <p>We deliver fresh apples with a 100% guarantee of freshness.</p>
+        </div>
+      </div>
+      <div class="bars">
+        <div class="icon-container">
+          <img src="https://i.ibb.co/FKNq4Qr/delivered.png" alt="" />
+        </div>
+        <div class="txt-container">
+          <h5>Fast</h5>
+          <p>
+            We deliver your orders as fast as possible, delivery procedure
+            begins as soon as apple is plucked from tree.
+          </p>
+        </div>
+      </div>
+      <div class="bars">
+        <div class="icon-container">
+          <img src="https://i.ibb.co/HHQK1wV/happy.png" alt="" />
+        </div>
+        <div class="txt-container">
+          <h5>Satisfying</h5>
+          <p>
+            We guarantee 100% customer satisfaction. We do our best to make
+            your purchase experience smooth. But if we mess up somehow you
+            will get compensated for every inconvenience.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec-padding" id="contact">
+    <h3 class="section-heading">CONTACT</h3>
+    <div class="social-links">
+        <a href="https://github.com/Naveen22-2002" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/edenaveen/" target="_blank">LinkedIn</a>
+        <a href="https://www.instagram.com/_n_a_v_e_e_n___ede/?igsh=MTFzczFwbGtycWs2bQ%3D%3D" target="_blank">Instagram</a>
+        <a href="mailto:naveenede4@gmail.com.com">Email</a>
+    </div>
+    <div class="sec-content-div flexible">
+      <h6>To make an order or just to know more contact us :</h6>
+      <form
+        id="form"
+       
+      >
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Your Email Address"
+          required
+        />
+        <input type="submit" class="btn" id="submit" value="Know More" />
+      </form>
+    </div>
+   
+  </section>
+  </main>
+  
+  <script src="script.js"></script>
+</body>
+</html>
